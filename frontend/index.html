@@ -9,17 +9,40 @@
 <body>
 
 <header class="header">
-    Header
+    <div class="container header-inner">
+        <span class="logo">Helpdesk</span>
+        <nav class="nav">
+            <button class="button button-outline" id="loginButton">Log in</button>
+            <button class="button" id="registerButton">Register</button>
+        </nav>
+    </div>
 </header>
 
 <main>
-    Main, information
+    <section id="landingView">
+        <div class="info-section">
+            <div class="container">
+                <h1>IT problems? We've got you covered.</h1>
+                <p>
+                    Report hardware, software, network and security issues in one place.
+                    Track the priority and status of every ticket until it is resolved.
+                </p>
+                <button class="button button-large" id="getStartedButton">Get started</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <h2>What can we help with?</h2>
+            <p class="muted" id="categoriesMessage" aria-live="polite">Loading categories...</p>
+            <ul class="categories" id="categoriesList"></ul>
+        </div>
+    </section>
 </main>
 
 <footer class="footer">
-    Footer (C) by me
+    <div class="container">Helpdesk Ticket System &copy; 2026 by Iryna Gavrylenko</div>
 </footer>
 
-<script type="module" src="js/app.js"></script>
+<script src="js/app.js" defer></script>
 </body>
 </html>
